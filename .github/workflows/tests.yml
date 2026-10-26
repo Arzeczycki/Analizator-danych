@@ -18,23 +18,28 @@ jobs:
         runs-on: ubuntu-24.04
         # steps - jakie kroki są do wykonania
         steps:
-            - name: Pobranie kodu
-              uses: actions/checkout@v4
+            - 
+                name: Pobranie kodu
+                uses: actions/checkout@v4
             # uses - wykorzystanie akcji GitHub Actions
             # actions - odwołanie do akcji
             # checkout - nazwa akcji pobierającej kod
             # @v4 - wskazanie wersji akcji
-            - name: Instalacja Pythona
-              uses: actions/setup-python@v5
-              with: 
-                python-version: '3.15'
+            - 
+                name: Instalacja Pythona
+                uses: actions/setup-python@v5
+                with: 
+                    python-version: '3.15'
             # actions/setup-python@v5 - gotowa akcja służąca do przygotowania wskazanej wersji Pythona
             # with - przekazanie parametru
-            - name: Instalacja zależności
-              run: |
+            - 
+                name: Instalacja zależności
+                run: |
                 python -m pip install --upgrade pip
                 python -m pip install -r requirements.txt
-            - name: Sprawdzenie jakości kodu
-              run: python -m ruff check .
-            - name: Uruchomienie testów
-              run: python -m pytest -v
+            - 
+                name: Sprawdzenie jakości kodu
+                run: python -m ruff check .
+            - 
+                name: Uruchomienie testów
+                run: python -m pytest -v
