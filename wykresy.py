@@ -8,6 +8,11 @@ from termcolor import colored
 
 
 def generuj_wykres(df):
+    """
+    Generuje wykres na podstawie danych
+    Args:
+        df (pandas.DataFrame | None): Dane wykorzystywane do wykresu
+    """
     if df is None or df.empty:
         print(colored("Najpierw wczytaj dane z pliku CSV", "red"))
         return
@@ -39,4 +44,4 @@ def generuj_wykres(df):
         print(colored("Plik nie został znaleziony", "red"))
 
     plt.show()
-    plt.close(fig)
+    plt.close(fig)  

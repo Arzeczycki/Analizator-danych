@@ -6,6 +6,11 @@ from termcolor import colored
 
 
 def wczytaj_dane():
+    """
+    Pozwala wybrac plik CSV z danymi z katalogu data, i wczytuje do DataFrame
+    Retuns:
+        pandas.DataFrame | None: Wczytane dane lub None, jesli nie wybrano pliku lub wystapil blad
+    """
     folder = Path("data")
     # metoda glob - służy do wyszukiwania plików pasujących do określonego wzorca
     pliki = sorted(folder.glob("*.csv"))
@@ -51,6 +56,11 @@ def wczytaj_dane():
         return df
 
 def wyswietl_dane(df):
+    """
+    Wyswietla podglad danych oraz podstawowe informacje o zbiorze 
+    Args:
+        df (pandas.DataFrame | None): Dane do wyswietlenia
+    """
     if df is None:
         print(colored("\nNie wczytano danych", "red"))
         return

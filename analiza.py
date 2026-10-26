@@ -3,6 +3,15 @@ from termcolor import colored
 
 
 def podstawowe_statystyki(df):
+    """
+    Oblicza i wyświetla podstawowe statystyki danych pogodowych
+    
+    Args: 
+        df(pandas.DataFrame | None)
+        Dane zawierające temperatury, wilgotność i opady
+    Returns:
+        None: Funkcja wyświetla wyniki w konsoli
+    """
     if df is None or df.empty:
         print(colored("Najpierw wczytaj dane z pliku CSV","red"))
         return
@@ -11,3 +20,5 @@ def podstawowe_statystyki(df):
     print(colored("Średnia temperatura minimalną: ","green"),colored(f"{df['temp_min'].mean():.2f} ℃","yellow"))
     print(colored("Suma opadów: ","green"),colored(f"{df['opady'].sum():.2f} mm","blue"))
 
+# print(podstawowe_statystyki.__doc__)
+# print(help(podstawowe_statystyki))

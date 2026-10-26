@@ -6,6 +6,11 @@ from termcolor import colored
 
 
 def zapisz_do_bazy(df):
+    """
+    Zapisuje dane pogodowe do bazy SQLite
+    Args:
+        df (pandas.DataFrame | None): Dane przeznaczone do zapisu w bazie
+    """
     if df is None or df.empty:
         print(colored("Najpierw wczytaj dane z pliku CSV", "red"))
         return

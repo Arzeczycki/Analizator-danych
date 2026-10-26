@@ -9,6 +9,7 @@ from wykresy import generuj_wykres
 
 
 def wyswietl_menu():
+    """Wyswietla menu glowne aplikacji w konsoli"""
     print("\n\nRESEARCH DATA ANALYZER")
     print("1. Wczytaj dane z pliku CSV")
     print("2. Wyświetl dane")
@@ -19,9 +20,8 @@ def wyswietl_menu():
     print(colored("-"*40, "blue"))
 
 def uruchom_menu():
-
+    """Obsluguje wybor opcji menu i wywoluje odpowiednie funkcje aplikacji """
     dane = None
-
     while True:
         wyswietl_menu()
         wybor = input("Wybierz opcję: ").strip()

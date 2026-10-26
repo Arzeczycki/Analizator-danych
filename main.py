@@ -3,6 +3,7 @@ from interface import uruchom_menu
 
 
 def main():
+    """    Uruchamia menu glowne aplikacji    """
     uruchom_menu()
 
 # def main():
