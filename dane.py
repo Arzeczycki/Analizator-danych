@@ -17,6 +17,8 @@ def wczytaj_dane():
     
     if not pliki:
         print(colored(f"Brak plików w folderze {folder}", "red"))
+        return None
+    
     print(colored("\nDostępne pliki CSV: ","blue"))
     if len(pliki) <= 10:
             for i, plik in enumerate(pliki, start=1):

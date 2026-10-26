@@ -16,9 +16,9 @@ def podstawowe_statystyki(df):
         print(colored("Najpierw wczytaj dane z pliku CSV","red"))
         return
     print(colored("\n ***** PODSTAWOWE STATYSTYKI *****","green"))
-    print(colored("Średnia temperatura maksymalną: ", "green"),colored(f"{df['temp_max'].mean():.2f} ℃", "red"))
-    print(colored("Średnia temperatura minimalną: ","green"),colored(f"{df['temp_min'].mean():.2f} ℃","yellow"))
-    print(colored("Suma opadów: ","green"),colored(f"{df['opady'].sum():.2f} mm","blue"))
+    print(colored("Średnia temperatura maksymalna:", "green"),colored(f"{df['temp_max'].mean():.2f} ℃", "red"))
+    print(colored("Średnia temperatura minimalna:","green"),colored(f"{df['temp_min'].mean():.2f} ℃","yellow"))
+    print(colored("Suma opadów:","green"),colored(f"{df['opady'].sum():.2f} mm","blue"))
 
 # print(podstawowe_statystyki.__doc__)
 # print(help(podstawowe_statystyki))

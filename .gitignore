@@ -1,15 +1,13 @@
 #ignorownie środowiska wirtualnego
 .venv/
 
-# plii ttymczasowe pythona
+# pliki ttymczasowe pythona
 __pycache__
 *.pyc
 
 #pliki narzędzi testujących
 .ruff_cache
-
-# lokalne testy
-tests/
+.pytest_cache
 
 # lokalne bazy danych
 database/*.db

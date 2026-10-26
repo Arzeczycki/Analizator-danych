@@ -30,6 +30,7 @@ Aplikacja umożliwia:
 
 ## 2. Wykorzystane technologie
 ![Static Badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=%233776AB&labelColor=%23ffffff) - język programowania
+
 `pandas` - przetwarzanie i analiza danych
 `matplotlib` - wizualiacja danych
 `SQLite3`- przechowywanie danych w relacyjnej bazie danych
