@@ -1,6 +1,6 @@
-from analiza import podstawowe_statystyki
-
 import pandas as pd
+
+from analiza import podstawowe_statystyki
 
 
 def test_podstawowe_statystyki(capsys):
