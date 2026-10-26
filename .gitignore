@@ -1,0 +1,26 @@
+#ignorownie środowiska wirtualnego
+.venv/
+
+# plii ttymczasowe pythona
+__pycache__
+*.pyc
+
+#pliki narzędzi testujących
+.ruff_cache
+
+# lokalne testy
+tests/
+
+# lokalne bazy danych
+database/*.db
+database/*.sqlite
+
+# Wygenerowane przez program pliki
+results/
+
+# pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Inne pliki własne
+ruff.txt
