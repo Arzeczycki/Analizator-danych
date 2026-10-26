@@ -43,7 +43,7 @@ def test_wczytaj_dane(tmp_path, monkeypatch):
     # lambda - anonimowa funkcja "x:" - x - parametr
     df = wczytaj_dane()
     assert df is not None
-    assert "Liczba wierszy: 2"
+    assert f"Liczba wierszy: {len(df)}" in df
 
 def test_wczytaj_dane_brak_plikow(tmp_path, monkeypatch, capsys):
     folder = tmp_path / "data"
