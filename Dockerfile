@@ -1,7 +1,7 @@
 # cykl pracy: Dockerfile -(docker build)-> obraz dockera -(Docker run)-> Kontener
 FROM python:3.12
 
-WORKDIR / app
+WORKDIR /app
 
 # kopiuj z "." z katalogu głównego do "." katalogu głównego
 # Kopiuje plik z kontekstu budowania do katalogu roboczego
