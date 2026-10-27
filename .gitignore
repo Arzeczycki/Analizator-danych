@@ -16,6 +16,9 @@ database/*.sqlite
 # Wygenerowane przez program pliki
 results/
 
+# Logi aplikacji
+logs/
+
 # pliki systemowe
 .DS_Store
 Thumbs.db

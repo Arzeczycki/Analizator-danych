@@ -1,10 +1,17 @@
 # Uruchamianie aplikacji
+import logging
+
 from interface import uruchom_menu
+from logowanie import konfiguruj_logowanie
 
 
 def main():
     """    Uruchamia menu glowne aplikacji    """
+    konfiguruj_logowanie()
+    logging.info("Uruchomiono aplikację")
+
     uruchom_menu()
+    logging.info("Zakończono działanie aplikacji")
 
 # def main():
 #     print("Uruchamiam aplikację")
