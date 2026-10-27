@@ -25,3 +25,7 @@ Thumbs.db
 
 # Inne pliki własne
 ruff.txt
+
+# Ignorowanie builda
+dist/
+*.egg-info/
