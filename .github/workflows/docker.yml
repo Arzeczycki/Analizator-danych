@@ -22,7 +22,7 @@ jobs:
                 # research-analyzer - nazwa obrazu z którego tworzony jest kontener
                 run: echo "0" | docker run -i --name analyzer-test research-analyzer 
             -
-                name: Wśswietlanie logów aplikacji
+                name: Wyświetlanie logów aplikacji
                 # if always() - próbuje wykonać nawet jeśli poprzednie kroki się nie udadzą
                 if: always()
                 # pierwsza instrukcja sprawdza czy kontener o tej nazwie w ogóle istnieje

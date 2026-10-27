@@ -8,6 +8,6 @@ def konfiguruj_logowanie():
     logging.basicConfig(
         filename = folder / "app.log",
         level=logging.INFO,
-        format = "%(asctime)-2s | %(levelname)s | %(message)s",
+        format = "%(asctime)s | %(levelname)s | %(message)s",
         encoding="utf-8"
     )
