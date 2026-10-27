@@ -16,7 +16,8 @@ Projekt powstał w ramach szkolenia
 7. [Testowanie](#7-testowanie)
 8. [Kontrola jakości kodu](#8-kontrola-jakosci-kodu)
 9. [Automatyzacja CI](#9-automatyzacja-ci)
-10. [Zastosowanie](#10-zastosowanie)
+10. [Dystrybucja pakietu](#10-dystrybucja-pakietu)
+11. [Zastosowanie](#11-zastosowanie)
 
 ## 1. Funkcjonalności
 
@@ -81,8 +82,26 @@ Automatyczne poprawienie obsługiwanych problemów:
 python -m ruff check . --fix
 ```
 
+## 10. Dystrybucja pakietu
 
-## 10. Zastosowanie
+Utworzenie pliku toml.
+Insalacja pakietu build
+```bash
+python -m pip install build
+```
+Zbudowanie paczki
+```bash
+python -m build
+```
+Projekt jest dostępny dla użytkownika w postaci pakietu instalacyjnego .whl. Wykorzystując **GitHub Releases**
+
+Po pobraniu pliku .whl należy zainstalowac poleceniem
+```bash
+python -m pip install research_data_analyzer-1.0.0-py3-none-any.whl
+```
+Instalacja wymaga zgodnej wersji Pythona, oraz przygotowanego środowiska wirtualnego.
+
+## 11. Zastosowanie
 Aplikacja może być punktem wyjścia do przetwarzania danych wykozrystanych w pracy naukowej lub dydaktycznej.
 
 Przykładowe zastosowania obejmują analizę danych pomiarowych, przgotowanie prostych zestawień statystycznych, wizualizację wyników oraz archiwizowanie danych w bazie danych.
