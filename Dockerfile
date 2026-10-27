@@ -1,4 +1,5 @@
 # cykl pracy: Dockerfile -(docker build)-> obraz dockera -(Docker run)-> Kontener
+# FROM python:3.12-slim - zmniejszenie rozmiaru obrazu dockera
 FROM python:3.12
 
 WORKDIR /app
