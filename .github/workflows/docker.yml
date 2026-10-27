@@ -34,7 +34,7 @@ jobs:
                 # druga instrukcja sprawdza czy istnieje plik log
                 run: |
                     if docker container inspect analyzer-test >/dev/null 2>&1; then
-                        if docker cp analyzer-test:/app/logs/app.log ./app.log; then
+                        if docker cp analyzer-test:./app/logs/app.log ./app.log; then
                             cat app.log
                         else
                             echo "Nie udało się pobrać danych z kontenera"
